@@ -1,28 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomePage</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <header>
-        <img src="./Images/logo_reclaiming_education_reimagining_futures.png" id="logo">
-    <h3>Reconciliation through Education. Empowerment through Learning. </h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      ReclaimEdu - Reconciliation through Education. Empowerment through
+      Learning.
+    </title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="./Images/logo_reclaiming_education_reimagining_futures.png"
+            alt="ReclaimEdu Logo"
+            id="logo"
+          />
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services</a>
+            <ul class="dropdown">
+              <li><a href="#policy">Policy & System Navigation</a></li>
+              <li><a href="#research">Research & Program Development</a></li>
+              <li><a href="#evaluation">Monitoring & Evaluation</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#workshops" class="nav-link">Workshops & Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-    <h2 id="#services">Services we Offer</h2>
-    <p1>Policy and System Navigation 
-Support students and families in understanding BC’s education system (K–12, post-secondary, adult learning).
-Advise school districts, colleges, and universities on Indigenous rights (UNDRIP, TRC Calls to Action, DRIPA) and equity policies for immigrants.
-Conduct policy analysis to identify systemic barriers and recommend reforms.
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-container">
+        <h1 class="hero-title">
+          Empowering the educational choices of
+          <span class="highlight">Indigenous communities</span>
+          <span class="highlight">immigrant families</span>
+          <span class="highlight">equity seekers</span>
+        </h1>
+        <p class="hero-subtitle">
+          ReclaimEdu is a full-service educational consulting company that
+          empowers students and communities to pursue their academic goals
+          through reconciliation and equity-focused support. Our expertise
+          includes policy navigation, research and program development, and
+          system advocacy for Indigenous and immigrant communities.
+        </p>
+        <a href="#services" class="btn-primary">View Our Services</a>
+      </div>
+    </section>
 
-Research & Program Development
-Conduct needs assessments to identify educational gaps within Indigenous and immigrant communities.
-Design and evaluate pilot programs (e.g., after-school tutoring, scholarship access, leadership training).
-Partner with universities and community organizations to produce community-led research on equity in education.
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number">10+</div>
+          <div class="stat-label">Years of Service</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Students Supported</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">50+</div>
+          <div class="stat-label">Community Partners</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100+</div>
+          <div class="stat-label">Programs Developed</div>
+        </div>
+      </div>
+    </section>
 
-Monitoring & Evaluation 
-</p1>
-</body>
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">
+          We construct progressive action plans for the future, based on each
+          community's unique strengths, values, and needs. Each engagement is a
+          unique opportunity to empower and energize students and families,
+          aiming for educational success through culturally responsive and
+          equity-focused approaches.
+        </p>
+
+        <div class="services-grid">
+          <div class="service-card" id="policy">
+            <h3>Policy & System Navigation</h3>
+            <p>
+              Support students and families in understanding BC's education
+              system (K–12, post-secondary, adult learning). Advise school
+              districts, colleges, and universities on Indigenous rights
+              (UNDRIP, TRC Calls to Action, DRIPA) and equity policies for
+              immigrants. Conduct policy analysis to identify systemic barriers
+              and recommend reforms.
+            </p>
+            <ul class="service-features">
+              <li>Education System Guidance</li>
+              <li>Policy Analysis & Advocacy</li>
+              <li>Rights-Based Consulting</li>
+              <li>Systemic Barrier Identification</li>
+            </ul>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div class="service-card" id="research">
+            <h3>Research & Program Development</h3>
+            <p>
+              Conduct needs assessments to identify educational gaps within
+              Indigenous and immigrant communities. Design and evaluate pilot
+              programs (e.g., after-school tutoring, scholarship access,
+              leadership training). Partner with universities and community
+              organizations to produce community-led research on equity in
+              education.
+            </p>
+            <ul class="service-features">
+              <li>Needs Assessments</li>
+              <li>Program Design & Evaluation</li>
+              <li>Community-Led Research</li>
+              <li>Partnership Development</li>
+            </ul>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+
+          <div class="service-card" id="evaluation">
+            <h3>Monitoring & Evaluation</h3>
+            <p>
+              Develop comprehensive monitoring frameworks to track program
+              effectiveness and educational outcomes. Provide data-driven
+              insights to improve services and support evidence-based decision
+              making for educational programs serving Indigenous and immigrant
+              communities.
+            </p>
+            <ul class="service-features">
+              <li>Program Evaluation</li>
+              <li>Outcome Measurement</li>
+              <li>Data Analysis & Reporting</li>
+              <li>Impact Assessment</li>
+            </ul>
+            <a href="#contact" class="service-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Workshops Section -->
+    <section id="workshops" class="workshops">
+      <div class="container">
+        <h2 class="section-title">Workshops & Events</h2>
+        <p class="section-subtitle">
+          Our workshops provide collaborative and supportive learning
+          environments where students, families, and educators can work toward
+          common goals of educational equity and reconciliation.
+        </p>
+
+        <div class="workshop-seasons">
+          <div class="season-card">
+            <h3>Fall</h3>
+            <p>
+              Policy Navigation, Application Support, Scholarship Access,
+              Educational Rights Workshops
+            </p>
+          </div>
+          <div class="season-card">
+            <h3>Winter</h3>
+            <p>System Navigation, Post-Secondary Planning, Community Forums</p>
+          </div>
+          <div class="season-card">
+            <h3>Spring</h3>
+            <p>
+              Application Support, Scholarship Preparation, Leadership
+              Development
+            </p>
+          </div>
+          <div class="season-card">
+            <h3>Summer</h3>
+            <p>
+              Transition Support, Program Development Training, Community
+              Research Initiatives
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="section-title">Community Feedback</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "Educational consulting is much more than opening a university
+              calendar and checking to see if one has made the grades to get in.
+              Educational consulting is the total assessment of the student
+              academically, emotionally and intellectually."
+            </p>
+            <p class="testimonial-author">— Community Member</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "The team at ReclaimEdu takes the time to assist families in
+              making choices based on their personal learning style, cultural
+              values, and career aspirations. They provide options and solutions
+              that give direction and hope."
+            </p>
+            <p class="testimonial-author">— Parent</p>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              "Our experience with ReclaimEdu was incredible. The knowledge and
+              expertise provided regarding educational rights, policy
+              navigation, and community resources was invaluable. Our family now
+              feels empowered to navigate the system."
+            </p>
+            <p class="testimonial-author">— Family Advocate</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <h2 class="section-title">About ReclaimEdu</h2>
+        <div class="about-content">
+          <p class="about-text">
+            ReclaimEdu is dedicated to reconciliation through education and
+            empowerment through learning. We combine community's unique assets
+            with culturally responsive educational consulting. We form deep
+            personal connections on a personalized level as trustworthy and
+            reliable advocates for each individual, family, and community we
+            serve.
+          </p>
+          <p class="about-text">
+            Our mission is to break down systemic barriers in education and
+            create pathways for success for Indigenous communities, immigrant
+            families, and all equity-seeking groups. We believe in the power of
+            education to transform lives and communities.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Get in Touch</h3>
+            <p>
+              Ready to learn more about how we can support your educational
+              journey? Contact us today.
+            </p>
+            <div class="contact-details">
+              <p><strong>Email:</strong> info@reclaimedu.ca</p>
+              <p><strong>Phone:</strong> Coming Soon</p>
+            </div>
+          </div>
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name *</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="form-group">
+              <label for="interest">Interested In:</label>
+              <select id="interest" name="interest">
+                <option value="">Select a service</option>
+                <option value="policy">Policy & System Navigation</option>
+                <option value="research">Research & Program Development</option>
+                <option value="evaluation">Monitoring & Evaluation</option>
+                <option value="workshop">Workshops & Events</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Our Services</h4>
+            <ul>
+              <li><a href="#policy">Policy & System Navigation</a></li>
+              <li><a href="#research">Research & Program Development</a></li>
+              <li><a href="#evaluation">Monitoring & Evaluation</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="#workshops">Workshops & Events</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Connect</h4>
+            <p>Email: info@reclaimedu.ca</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 ReclaimEdu. All Rights Reserved.</p>
+          <p class="tagline">
+            Reconciliation through Education. Empowerment through Learning.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
