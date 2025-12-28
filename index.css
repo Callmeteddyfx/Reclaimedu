@@ -24,6 +24,7 @@ body {
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--bg-white);
+
 }
 
 .container {
@@ -36,7 +37,6 @@ body {
 .navbar {
     background-color: var(--bg-white);
     box-shadow: var(--shadow);
-    position: sticky;
     top: 0;
     z-index: 1000;
     padding: 1rem 0;
@@ -133,6 +133,35 @@ body {
     height: 3px;
     background-color: var(--text-dark);
     transition: all 0.3s;
+}
+
+.nav-close {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--text-dark);
+    cursor: pointer;
+    padding: 0.5rem;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s;
+}
+
+.nav-close:hover {
+    color: var(--primary-color);
+}
+
+.nav-close span {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 300;
 }
 
 /* Hero Section */
@@ -523,19 +552,26 @@ body {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 0;
+        height: 100vh;
         flex-direction: column;
         background-color: var(--bg-white);
         width: 100%;
         text-align: center;
         transition: 0.3s;
         box-shadow: var(--shadow);
-        padding: 2rem 0;
+        padding: 3rem 0 2rem;
         gap: 0;
+        overflow-y: auto;
+        z-index: 999;
     }
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .nav-close {
+        display: flex;
     }
 
     .nav-item {

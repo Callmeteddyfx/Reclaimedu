@@ -7,6 +7,7 @@
       ReclaimEdu - Reconciliation through Education. Empowerment through
       Learning.
     </title>
+    <link rel="icon" type="image/png" href="/Images/demo_image1.jpg">
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
@@ -26,6 +27,9 @@
           <span></span>
         </button>
         <ul class="nav-menu">
+          <button class="nav-close" aria-label="Close navigation">
+            <span>×</span>
+          </button>
           <li class="nav-item">
             <a href="#about" class="nav-link">About</a>
           </li>
@@ -310,8 +314,11 @@
               ></textarea>
             </div>
 
-            <input type="text" name="company" style="display:none">
-            <div class="cf-turnstile" data-sitekey="0x4AAAAAACJYY0n3tIkt4aiI"></div>
+            <input type="text" name="company" style="display: none" />
+            <div
+              class="cf-turnstile"
+              data-sitekey="0x4AAAAAACJYY0n3tIkt4aiI"
+            ></div>
             <button type="submit" class="btn-primary">Send Message</button>
           </form>
         </div>
@@ -351,7 +358,11 @@
         </div>
       </div>
     </footer>
-    <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+    <script
+      src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+      async
+      defer
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
