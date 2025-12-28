@@ -137,7 +137,6 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
     background-image: url("./images/demo_image1.jpg");
     color: white;
     padding: 6rem 2rem;
