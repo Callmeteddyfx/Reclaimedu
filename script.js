@@ -1,3 +1,5 @@
+const email = "info@reclaimedu.ca"
+
 // Mobile Navigation Toggle
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.querySelector('.nav-toggle');
@@ -37,12 +39,42 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form submission handler (placeholder)
     const contactForm = document.querySelector('.contact-form');
     if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
-            // Add form submission logic here
+            if (this.company.value !== ''){
+                return;
+            }
+
+            const token = document.querySelector(
+                'input[name="cf-turnstile-reponse"]'
+            )?.value;
+
+            if (!token){
+                alert("Please complete verification.");
+                return;
+            }
+
+            //Send data to backend
+            try{
+                const res = await fetch("/send-email", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({
+                        token,
+                        name: this.name.value,
+                        email: this.email.value,
+                        message: this.message.value
+                    })
+                });
             
+                if (!res.ok) throw new Error("Verification failed");
+
             alert('Thank you for your message! We will get back to you soon.');
             this.reset();
+
+            } catch (err) {
+                alert("Something went wrong. Please try again.");
+            }
         });
     }
 });
