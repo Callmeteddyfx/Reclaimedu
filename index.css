@@ -166,7 +166,9 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url("/images/demo_image1.jpg");
+    background-image: url("../images/demo_image1.jpg");
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 6rem 2rem;
     text-align: center;
@@ -417,6 +419,15 @@ body {
     text-align: center;
 }
 
+.about .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about .btn-primary{
+    width: fit-content;
+}
 /* Contact Section */
 .hp {
   position: absolute;

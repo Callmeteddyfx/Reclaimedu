@@ -21,18 +21,18 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
 //sticky header
-    const sticky = document.querySelector(".navbar");
+    // const sticky = document.querySelector(".navbar");
 
-    window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-    const fadeEnd = 400;
+    // window.addEventListener("scroll", () => {
+    // const scrollY = window.scrollY;
+    // const fadeEnd = 400;
 
-    const opacity = Math.max(1 - scrollY / fadeEnd, 0);
-    const translateY = Math.min(scrollY / 5, 40);
+    // const opacity = Math.max(1 - scrollY / fadeEnd, 0);
+    // const translateY = Math.min(scrollY / 5, 40);
 
-    sticky.style.opacity = opacity;
-    sticky.style.transform = `translateY(${translateY}px)`;
-    });
+    // sticky.style.opacity = opacity;
+    // sticky.style.transform = `translateY(${translateY}px)`;
+    // });
 
     // Close menu when clicking on a link
     const navLinks = document.querySelectorAll('.nav-link');
