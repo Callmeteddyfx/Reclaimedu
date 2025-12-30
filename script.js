@@ -20,22 +20,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     });
 
-//sticky header
-    // const sticky = document.querySelector(".navbar");
 
-    // window.addEventListener("scroll", () => {
-    // const scrollY = window.scrollY;
-    // const fadeEnd = 400;
+    // Fade in sections
+        const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // animate once
+        }
+        });
+    },
+    { threshold: 0.2 }
+    );
 
-    // const opacity = Math.max(1 - scrollY / fadeEnd, 0);
-    // const translateY = Math.min(scrollY / 5, 40);
+    document.querySelectorAll(".fade-in").forEach(el => {
+    observer.observe(el);
+    });
 
-    // sticky.style.opacity = opacity;
-    // sticky.style.transform = `translateY(${translateY}px)`;
-    // });
 
     // Close menu when clicking on a link
     const navLinks = document.querySelectorAll('.nav-link');
+    const navMenu = document.querySelector('.nav-menu');
+
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             navMenu.classList.remove('active');
@@ -50,6 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 e.preventDefault();
                 const target = document.querySelector(href);
                 if (target) {
+                    navMenu.classList.remove('active');
                     target.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'

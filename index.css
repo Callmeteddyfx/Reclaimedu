@@ -27,6 +27,17 @@ body {
 
 }
 
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -35,11 +46,12 @@ body {
 
 /* Navigation */
 .navbar {
+    height: 9rem;
     background-color: var(--bg-white);
     box-shadow: var(--shadow);
     top: 0;
     z-index: 1000;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 .nav-container {
@@ -55,6 +67,10 @@ body {
     width: var(--logo-size);
     height: var(--logo-size);
     object-fit: contain;
+}
+
+.nav-logo #logo:hover{
+    cursor: pointer;
 }
 
 .nav-menu {
@@ -166,7 +182,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background-image: url("./images/demo_image1.jpg");
+    background-image: url("./Images/demo_image1.jpg");
     background-size: cover;
     background-position: center;
     color: white;
@@ -576,7 +592,7 @@ body {
         height: 100vh;
         flex-direction: column;
         background-color: var(--bg-white);
-        width: 100%;
+        width: 80%;
         text-align: center;
         transition: 0.3s;
         box-shadow: var(--shadow);
@@ -660,4 +676,12 @@ body {
     .stat-number {
         font-size: 2.5rem;
     }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fade-in {
+    transition: none;
+    opacity: 1;
+    transform: none;
+  }
 }
