@@ -200,6 +200,7 @@ body {
     font-weight: 700;
     margin-bottom: 1.5rem;
     line-height: 1.3;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .hero-title .highlight {
@@ -657,6 +658,7 @@ body {
     .stats-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+        padding: 0;
     }
 }
 

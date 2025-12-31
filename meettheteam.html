@@ -6,8 +6,68 @@
     <title>Meet the Team</title>
     <link rel="icon" type="image/png" href="/Images/logo_header.png">
     <link rel="stylesheet" href="meettheteam.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
 </head>
 <body>
-    
+    <section class="fade-in">
+        <section class="title-text">
+            <h2>Meet the Team</h2>
+        </section>
+    </section>
+    <section class="fade-in">
+    <section class="team-list">
+        <ul style="list-style-type: none;">
+            <li class="team">
+                <img class="profile-image" src="" alt="uju's image">
+                <h4 class="name">Uju Egbuawa</h4>
+                <h4 class="tag">CFO</h4>
+                <p class="description">Uju Egbuawa</p>
+                <div>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-brands fa-linkedin" onclick="location.href=''"></i>
+                </div>
+            </li>
+            <li class="team">
+                <img class="profile-image" src="" alt="vibusha's image">
+                <h4 class="name">Vibusha Madanayake</h4>
+                <h4 class="tag">CFO</h4>
+                <p class="description">Vibusha</p>
+                <div>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-brands fa-linkedin" onclick="location.href=''"></i>
+                </div>
+            </li>
+            <li class="team">
+                <img class="profile-image" src="" alt="David's image">
+                <h4 class="name">David Egbuawa</h4>
+                <h4 class="tag">Technical Lead</h4>
+                <p class="description">David</p>
+                <div>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-brands fa-linkedin" onclick="location.href=''"></i>
+                </div>
+            </li>
+        </ul>
+    </section>
+    </section>
 </body>
+<script>
+        // Fade in sections
+        const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // animate once
+        }
+        });
+    },
+    { threshold: 0.2 }
+    );
+
+    document.querySelectorAll(".fade-in").forEach(el => {
+    observer.observe(el);
+    });
+</script>
 </html>
