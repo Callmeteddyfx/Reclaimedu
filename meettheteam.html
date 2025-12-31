@@ -21,26 +21,31 @@
     <section class="team-list">
         <ul style="list-style-type: none;">
             <!-- Uju Egbuawa -->
-            <li class="team" onclick="window.location.href='ujuegbuawa.html'">
+            <li class="team">
                 <div class="profile-image-bg">
-                <img class="profile-image" src="./Images/Uju's Reclaimedu picture 1.png" alt="uju's image">
+                <img class="profile-image"
+                onclick="window.location.href='our-team/ujuegbuawa.html'"
+                src="./Images/Uju's Reclaimedu picture 1.png" alt="uju's image">
                 </div>
                 <h4 class="name">Uju Egbuawa</h4>
                 <h4 class="tag">Co-founder/Managing Director</h4>
                 <div>
                 <i class="fa-regular fa-envelope"></i>
-                <i class="fa-brands fa-linkedin" onclick="location.href=''" target="_blank" rel="noopener noreferrer"></i>
+                <i class="fa-brands fa-linkedin" onclick="location.href=' https://www.linkedin.com/in/ujunma-egbuawa-phd-128064152/'" target="_blank" rel="noopener noreferrer"></i>
                 </div>
             </li>
+            <!-- Vibusha Madanayake -->
             <li class="team">
                 <div class="profile-image-bg">
-                <img class="profile-image" src="./Images/Vibusha Photo.jpg" alt="vibusha's image">
+                <img class="profile-image"
+                onclick="window.location.href='our-team/vibushamadanayake.html'"
+                src="./Images/Vibusha Photo.jpg" alt="vibusha's image">
                 </div>
                 <h4 class="name">Vibusha Madanayake</h4>
                 <h4 class="tag">Co-founder/Director of Programs</h4>
                 <div>
                 <i class="fa-regular fa-envelope"></i>
-                <i class="fa-brands fa-linkedin" onclick="location.href=''"></i>
+                <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/vibusha-madanyake-ma-152b3b54/'"></i>
                 </div>
             </li>
         </ul>
@@ -76,8 +81,8 @@
     </footer>
 </body>
 <script>
-        // Fade in sections
-        const observer = new IntersectionObserver(
+    // Fade in sections
+    const observer = new IntersectionObserver(
     entries => {
         entries.forEach(entry => {
         if (entry.isIntersecting) {

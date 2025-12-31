@@ -19,7 +19,7 @@
     --logo-size: 150px;
     --icon-size: 1.2rem;
     /* Profile */
-    --profile-size: 8rem;
+    --profile-size: 10rem;
     --profile-radius: 50%;
 }
 
@@ -94,6 +94,19 @@ i:hover{
     align-items: center;
 }
 
+.team-list li .profile-image{
+    filter: none;
+    filter: brightness(0.9) contrast(1.03);
+    transition: filter 0.5s ease;
+}
+
+.team-list li .profile-image:hover{
+    filter: none;
+    filter: brightness(1.02);
+    transform: scale(1.01);
+    transition: all 0.2s ease;
+}
+
 .profile-image{
     width: var(--profile-size);
     height: var(--profile-size);
@@ -131,7 +144,7 @@ i:hover{
 @media (max-width: 768px){
 
 .title-text h2{
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 1rem;
     font: 'Helvetica Neue';
 }
@@ -146,7 +159,7 @@ i:hover{
 
 @media (max-width: 480px) {
 .title-text h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding: 1rem;
     font: 'Helvetica Neue';
 }
