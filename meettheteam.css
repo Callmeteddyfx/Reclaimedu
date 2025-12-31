@@ -17,11 +17,15 @@
     --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     --shadow-hover: 0 5px 20px rgba(0, 0, 0, 0.15);
     --logo-size: 150px;
+    --icon-size: 1.2rem;
+    /* Profile */
+    --profile-size: 8rem;
+    --profile-radius: 50%;
 }
 
 
 body{
-    width: 100%;
+    height: 100dvh;
     font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
     line-height: 1.6;
     color: var(--text-dark);
@@ -34,18 +38,17 @@ body{
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
+    height: 100dvh;
 }
 
 i {
   cursor: pointer;
-  color: #000000;
-  width: 70px;
-  height: 70px;
+  font-size: var(--icon-size);
 }
 
 i:hover{
-  transform: translateY(-1px);
-  transition: all 0.5s ease-in;
+  transform: translateY(-2.5px);
+  transition: all 0.2s ease-in;
 }
 
 .fade-in {
@@ -66,6 +69,7 @@ i:hover{
 }
 
 /* Team List Section */
+
 .team-list{
     width: 100dvw;
     display: flex;
@@ -76,22 +80,56 @@ i:hover{
 .team-list ul{
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-flow: row;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     gap: 1rem;
-    padding: 0;
+    margin-bottom: 10px;
 }
 
 .team-list li{
-    height: 400px;
-    border: thin solid #000000;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.profile-image{
+    width: var(--profile-size);
+    height: var(--profile-size);
+    object-fit: cover;
+    border-radius: var(--profile-radius);
+}
+
+.profile-image-bg{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name{
+
+
+}
+
+.tag{
+
+}
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    background-color: var(--text-dark);
+    color: white;
+    padding: 3rem 2rem 1.5rem;
+}
+
 /* Phone Responsiveness */
 @media (max-width: 768px){
+
 .title-text h2{
     font-size: 2rem;
     padding: 1rem;
@@ -101,7 +139,7 @@ i:hover{
 .team-list ul{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1rem;
+    gap: 2rem;
     padding: 0;
 }
 }
