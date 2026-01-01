@@ -7,15 +7,30 @@
     <link rel="icon" type="image/png" href="/Images/logo_header.png">
     <link rel="stylesheet" href="meettheteam.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-
+    <!--
+    Icons by Font Awesome Free
+    https://fontawesome.com
+    License: https://fontawesome.com/license/free
+    -->
 </head>
 <body>
+    <header>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="./Images/logo_reclaiming_education_reimagining_futures.png"
+            alt="ReclaimEdu Logo"
+            id="logo"
+            onclick="location.href='index.html#about'"
+          />
+        </div>
+    </header>
+
     <section class="fade-in">
         <section class="title-text">
             <h2>Meet the Team</h2>
         </section>
     </section>
-
     <!-- Founders Section -->
     <section class="fade-in">
     <section class="team-list">
@@ -28,9 +43,12 @@
                 src="./Images/Uju's Reclaimedu picture 1.png" alt="uju's image">
                 </div>
                 <h4 class="name">Uju Egbuawa</h4>
-                <h4 class="tag">Co-founder/Executive Director</h4>
+                <h4 class="tag">Co-founder / Executive Director</h4>
                 <div>
-                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-regular fa-envelope"
+                title="uju@reclaimedu.ca"
+                onclick="window.location.href='mailto:uju@reclaimedu.ca'"
+                ></i>
                 <i class="fa-brands fa-linkedin" onclick="location.href=' https://www.linkedin.com/in/ujunma-egbuawa-phd-128064152/'" target="_blank" rel="noopener noreferrer"></i>
                 </div>
             </li>
@@ -42,9 +60,12 @@
                 src="./Images/Vibusha Photo.jpg" alt="vibusha's image">
                 </div>
                 <h4 class="name">Vibusha Madanayake</h4>
-                <h4 class="tag">Co-founder/Director of Programs</h4>
+                <h4 class="tag">Co-founder / Director of Programs</h4>
                 <div>
-                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-regular fa-envelope"
+                title="vibusha@reclaimedu.ca"
+                onclick="window.location.href='mailto:vibusha@reclaimedu.ca'"
+                ></i>
                 <i class="fa-brands fa-linkedin" onclick="location.href='https://www.linkedin.com/in/vibusha-madanyake-ma-152b3b54/'"></i>
                 </div>
             </li>
@@ -63,21 +84,24 @@
                 <h4 class="name">David Egbuawa</h4>
                 <h4 class="tag">Technical Lead</h4>
                 <div>
-                <i class="fa-regular fa-envelope"></i>
-                <i class="fa-brands fa-linkedin" onclick="window.location.href='https://www.linkedin.com/in/david-egbuawa-14a396339'" target="_blank" rel="noopener"></i>
+                <a href="mailto:david@reclaimedu.ca">
+                <i class="fa-regular fa-envelope"
+                title="david@reclaimedu.ca"
+                ></i></a>
+
+                <i class="fa-brands fa-linkedin" 
+                onclick="window.location.href='https://www.linkedin.com/in/david-egbuawa-14a396339'" target="_blank" rel="noopener"></i>
                 </div>
             </li>
         </ul>
     </section>
     </section>
-
      <!-- Footer -->
     <footer class="footer">
           <p>&copy; 2025 ReclaimEdu. All Rights Reserved.</p>
           <p class="tagline">
             Reconciliation through Education. Empowerment through Learning.
           </p>
-        <p>Icons by <a href="https://fontawesome.com/">Font Awesome</a></p>
     </footer>
 </body>
 <script>
