@@ -40,6 +40,10 @@ body{
     align-items: center;
 }
 
+main{
+    flex: 1;
+}
+
 html {
     overflow-x: hidden;
     scroll-behavior: smooth;
