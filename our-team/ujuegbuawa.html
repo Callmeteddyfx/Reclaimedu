@@ -4,8 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ujuegbuawa</title>
+    <link rel="icon" type="image/png" href="/Images/logo_header.png">
+    <link rel="stylesheet" href= 'our-team.css'" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
 </head>
 <body>
+    <header>
+    <div class="nav-container">
+    <div class="nav-logo">
+        <img
+        src="/Images/logo_reclaiming_education_reimagining_futures.png"
+        alt="ReclaimEdu Logo"
+        id="logo"
+        onclick="location.href='index.html#about'"
+        />
+    </div>
+    </header>
+    <section class="fade-in">
+    <div class="bg-img">
+    <img 
+    id="profile-img"
+    src="/Images/Uju's Reclaimedu picture 1.png">
+    </div>
     <h2>Dr. Uju Egbuawa B.A, M.A(Phil), M.A (Gender),PDE, Ph.D.</h2>
     <p class="about">
         <b>Dr. Uju Egbuawa (she/her)</b> is a philosopher, educator, and community-based researcher, and
@@ -33,5 +53,31 @@ critical inquiry grounded in real lives.
 Together, we co-founded ReclaimEdu to challenge exclusionary systems of learning and to
 reclaim education as a tool for dignity, resistance, and possibility.
 </p>
+</section>
+    <!-- Footer -->
+<footer class="footer">
+        <p>&copy; 2025 ReclaimEdu. All Rights Reserved.</p>
+        <p class="tagline">
+        Reconciliation through Education. Empowerment through Learning.
+        </p>
+</footer>
 </body>
+<script>
+    // Fade in sections
+    const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // animate once
+        }
+        });
+    },
+    { threshold: 0.2 }
+    );
+
+    document.querySelectorAll(".fade-in").forEach(el => {
+    observer.observe(el);
+    });
+</script>
 </html>
