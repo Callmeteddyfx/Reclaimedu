@@ -93,15 +93,25 @@ i:hover{
 }
 
 .title-text{
-    width: 100vw;
+    padding: 1rem;
+    width: 100%;
     background-color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title-text h2{
+    font-family: 'Segoe UI', sans-serif;
     color: var(--bg-light);
     font-size: 2rem;
-    padding: 1rem;
     font: 'Helvetica Neue';
+}
+
+.title-text p{
+    font-family: 'Segoe UI', sans-serif;
+    color: var(--bg-light);
+    text-align: center;
 }
 
 /* Team List Section */
@@ -178,7 +188,6 @@ object-fit: contain;
 
 .title-text h2{
     font-size: 1rem;
-    padding: 1rem;
     font: 'Helvetica Neue';
 }
 
@@ -199,7 +208,6 @@ object-fit: contain;
 
 .title-text h2{
     font-size: 2rem;
-    padding: 1rem;
     font: 'Helvetica Neue';
 }
 }
