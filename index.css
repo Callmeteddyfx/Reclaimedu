@@ -215,11 +215,17 @@ html{
     font-weight: 700;
 }
 
+.hero-title .highlight ul{
+    list-style-position: inside;
+}
+
 .hero-subtitle {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    opacity: 0.95;
     line-height: 1.8;
+    background-color: rgba(44, 62, 80, 0.8);
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .btn-primary {
@@ -426,7 +432,7 @@ html{
 
 /* About Section */
 .about {
-    background-color: var(--bg-light);
+    background-color: var(--bg-white);
     padding: 5rem 2rem;
 }
 
@@ -450,15 +456,18 @@ html{
 }
 
 .about .btn-primary{
-    width: fit-content;
+    width: 100%;
     font-family: 'Segoe UI', sans-serif;
     font-size: 1rem;
+    background-color: var(--bg-light);
 }
 
 .about .btn-primary:hover{
     color: var(--primary-color);
 }
 /* Contact Section */
+
+/* HoneyPot for B.O.T.S */
 .hp {
   position: absolute;
   left: -9999px;
@@ -468,6 +477,9 @@ html{
   overflow: hidden;
 }
 
+.contact{
+background-color: var(--bg-light);
+}
 
 .contact-title{
     height: 8rem;
