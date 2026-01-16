@@ -59,7 +59,6 @@ header{
     padding: 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    background-color: red;
 }
 
 .nav-logo #logo {
@@ -159,8 +158,10 @@ i:hover{
     width: var(--profile-size);
     height: var(--profile-size);
     object-fit: cover;
+    object-position: center;
     border-radius: var(--profile-radius);
 }
+
 
 .profile-image-bg{
     width: 100%;
